@@ -1,9 +1,9 @@
 {
     "routes": [
         { "handle": "filesystem" },
-        { "api": "/demo/?", "dest": "/src/demo/index.php" },
-        { "api": "/demo/(.+)", "dest": "/src/demo/vercel-static.php" },
-        { "api": "/", "dest": "/src/index.php" }
+        { "src": "/demo/?", "dest": "/src/demo/index.php" },
+        { "src": "/demo/(.+)", "dest": "/src/demo/vercel-static.php" },
+        { "src": "/", "dest": "/src/index.php" }
     ],
     "functions": {
         "api/**/*": {
