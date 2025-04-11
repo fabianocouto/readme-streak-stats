@@ -1,12 +1,12 @@
 {
     "routes": [
         { "handle": "filesystem" },
-        { "src": "/demo/?", "dest": "/src/demo/index.php" },
-        { "src": "/demo/(.+)", "dest": "/src/demo/vercel-static.php" },
-        { "src": "/", "dest": "/src/index.php" }
+        { "api": "/demo/?", "dest": "/src/demo/index.php" },
+        { "api": "/demo/(.+)", "dest": "/src/demo/vercel-static.php" },
+        { "api": "/", "dest": "/src/index.php" }
     ],
     "functions": {
-        "src/**/*": {
+        "api/**/*": {
             "runtime": "vercel-php@0.7.3"
         }
     }
