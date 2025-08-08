@@ -65,7 +65,7 @@ function camelToSkewer(string $str): string
 
 <body <?php echo $darkmode === "on" ? 'data-theme="dark"' : ""; ?>>
     <h1>🔥 GitHub Readme Streak Stats</h1>
-
+    <?= dirname(__DIR__, 1) ?>
     <!-- GitHub badges/links section -->
     <div class="github">
         <!-- GitHub Sponsors -->
