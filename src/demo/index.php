@@ -47,8 +47,8 @@ function camelToSkewer(string $str): string
     </script>
     <title>GitHub Readme Streak Stats Demo</title>
     <link href="https://css-gg-cdn.pages.dev/css" rel="stylesheet">
-    <link rel="stylesheet" href="./css/style.css?v=<?= filemtime("./css/style.css") ?>">
-    <link rel="stylesheet" href="./css/toggle-dark.css?v=<?= filemtime("./css/toggle-dark.css") ?>">
+    <link rel="stylesheet" href="./css/style.css?v=<?= filemtime(dirname(__DIR__, 1) . "/src/css/style.css") ?>">
+    <link rel="stylesheet" href="./css/toggle-dark.css?v=<?= filemtime(dirname(__DIR__, 1) . "/src/css/toggle-dark.css") ?>">
 
     <!-- Favicons -->
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
@@ -56,10 +56,10 @@ function camelToSkewer(string $str): string
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
     <link rel="mask-icon" href="icon.svg" color="#fb8c00">
 
-    <script type="text/javascript" src="./js/script.js?v=<?= filemtime("./js/script.js") ?>" defer></script>
-    <script type="text/javascript" src="./js/accordion.js?v=<?= filemtime("./js/accordion.js") ?>" defer></script>
-    <script type="text/javascript" src="./js/toggle-dark.js?v=<?= filemtime("./js/toggle-dark.js") ?>" defer></script>
-    <script type="text/javascript" src="./js/jscolor.min.js?v=<?= filemtime("./js/jscolor.min.js") ?>" defer></script>
+    <script type="text/javascript" src="./js/script.js?v=<?= filemtime(dirname(__DIR__, 1) . "/src/js/script.js") ?>" defer></script>
+    <script type="text/javascript" src="./js/accordion.js?v=<?= filemtime(dirname(__DIR__, 1) . "/src/js/accordion.js") ?>" defer></script>
+    <script type="text/javascript" src="./js/toggle-dark.js?v=<?= filemtime(dirname(__DIR__, 1) . "/src/js/toggle-dark.js") ?>" defer></script>
+    <script type="text/javascript" src="./js/jscolor.min.js?v=<?= filemtime(dirname(__DIR__, 1) . "/src/js/jscolor.min.js") ?>" defer></script>
     <script async defer src="https://buttons.github.io/buttons.js"></script>
 </head>
 
